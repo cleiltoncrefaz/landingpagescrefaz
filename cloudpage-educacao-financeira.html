@@ -151,9 +151,9 @@
             .container {
                 display: flex;
                 flex-direction: column;
-                gap: 40px;
+                gap: 30px;
                 padding: 30px;
-                max-width: 1100px;
+                max-width: 1000px;
                 margin: 0 auto;
             }
 
@@ -187,38 +187,36 @@
 
             h4 {
                 font-size: 32px;
-                color: #fff;
-                font-weight: 400;
-                line-height: 1;
-                text-align: center;
-                margin: 0 0 10px 0;
+                color: #ef6b22;
+                font-weight: 600;
+                line-height: 1.2;
+                margin: 0 0 20px 0;
             }
 
             ul {
                 margin: 0;
+                padding: 0;
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 30px;
-                justify-content: center;
-                padding: 20px 0 0 0;
+                grid-template-columns: 1fr;
+                gap: 10px;
             }
 
             li {
                 color: #ffffff;
                 list-style: none;
-                background: #ef6b22;
+                font-weight: 300;
                 border-radius: 10px;
-                padding: 16px;
-                font-size: 20px;
+                font-size: 24px;
                 display: grid;
                 gap: 15px;
                 align-items: center;
                 justify-content: center;
-                min-height: 150px;
+                padding: 10px 0;
                 grid-template-columns: 0.1fr 1fr;
 
                 svg {
                     width: 32px;
+                    fill: #ef6b22;
                 }
             }
 
@@ -233,7 +231,7 @@
 
             .primary-content {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(2, 0.8fr);
                 gap: 60px;
             }
 
@@ -249,6 +247,22 @@
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
+
+            .finance {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+                align-items: center;
+                border-radius: 20px;
+                padding: 0;
+            }
+
+
+            .porkcoin img {
+                width: 100%;
+                padding: 40px;
+            }
+
 
 
             /* FORMULARIO */
@@ -419,12 +433,8 @@
 
                 ul {
                     grid-template-columns: 1fr;
-                    gap: 20px;
-                }
-
-                li {
-                    font-size: 20px;
-                    min-height: 120px;
+                    gap: 0px;
+                    padding: 0;
                 }
 
                 .container {
@@ -450,6 +460,28 @@
                     flex-direction: column;
                     text-align: center;
                 }
+
+                .secundary-content {
+                    gap: 20px;
+                }
+
+                .finance {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 0px;
+                }
+
+                .porkcoin img {
+                    padding: 0px;
+                }
+
+                h4 {
+                    font-size: 26px;
+                }
+
+                li {
+                    font-size: 22px;
+                }
             }
         </style>
 
@@ -458,13 +490,12 @@
             <div class="primary-content">
                 <div class="hero">
                     <h1>Transforme sua relação com dinheiro com a <strong>Educação Financeira.</strong></h1>
-                    <h2 class="texto-desktop">Baixe nosso <strong>conteúdo </strong>exclusivo com dicas sobre como você
-                        pode <strong>planejar melhor seus gastos e passar o fim de mês mais tranquilo.</strong> </h2>
-                    <h2 class="texto-mobile">Baixe nosso <strong>conteúdo </strong>exclusivo com dicas sobre como você
-                        pode planejar
+                    <h2 class="texto-desktop">Baixe nosso <strong>conteúdo </strong>exclusivo com dicas pra
+                        <strong>planejar melhor seus gastos e passar o fim de mês mais tranquilo.</strong>
+                    </h2>
+                    <h2 class="texto-mobile">Baixe nosso <strong>conteúdo </strong>exclusivo com dicas pra planejar
                         melhor seus gastos e passar o fim de mês mais tranquilo.
-                        <strong>Preencha os campos e
-                            receba seu eBook.</strong>
+                        <strong>Preencha os campos e receba seu eBook.</strong>
                     </h2>
                 </div>
 
@@ -521,54 +552,38 @@
             <div class="secundary-content">
 
                 <div class="finance">
-                    <h4>A Crefaz te conta como a Educação Financeira pode te ajudar hoje!</h4>
-                    <ul>
-                        <li>
-                            <svg id="icone-check" data-name="icone-check" viewBox="0 0 54.45 54.45">
-                                <defs>
-                                    <style>
-                                        .cls-1 {
-                                            fill: #fff;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="cls-1"
-                                    d="M27.22,54.45C12.21,54.45,0,42.23,0,27.22S12.21,0,27.22,0s27.22,12.21,27.22,27.22-12.21,27.22-27.22,27.22ZM27.22,2.73C13.72,2.73,2.73,13.72,2.73,27.22s10.99,24.5,24.5,24.5,24.5-10.99,24.5-24.5S40.73,2.73,27.22,2.73Z" />
-                                <path class="cls-1"
-                                    d="M24.59,36.34c-1.8,0-3.6-.69-4.97-2.06l-5.39-5.39,1.93-1.93,5.39,5.39c1.68,1.68,4.41,1.68,6.09,0l12.84-12.84,1.93,1.93-12.84,12.84c-1.37,1.37-3.17,2.06-4.97,2.06Z" />
-                            </svg>Você aprende a lidar melhor com seu dinheiro.
-                        </li>
-                        <li>
-                            <svg id="icone-check" data-name="icone-check" viewBox="0 0 54.45 54.45">
-                                <defs>
-                                    <style>
-                                        .cls-1 {
-                                            fill: #fff;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="cls-1"
-                                    d="M27.22,54.45C12.21,54.45,0,42.23,0,27.22S12.21,0,27.22,0s27.22,12.21,27.22,27.22-12.21,27.22-27.22,27.22ZM27.22,2.73C13.72,2.73,2.73,13.72,2.73,27.22s10.99,24.5,24.5,24.5,24.5-10.99,24.5-24.5S40.73,2.73,27.22,2.73Z" />
-                                <path class="cls-1"
-                                    d="M24.59,36.34c-1.8,0-3.6-.69-4.97-2.06l-5.39-5.39,1.93-1.93,5.39,5.39c1.68,1.68,4.41,1.68,6.09,0l12.84-12.84,1.93,1.93-12.84,12.84c-1.37,1.37-3.17,2.06-4.97,2.06Z" />
-                            </svg>Entende que dinheiro não é só sobre pagar as contas.
-                        </li>
-                        <li>
-                            <svg id="icone-check" data-name="icone-check" viewBox="0 0 54.45 54.45">
-                                <defs>
-                                    <style>
-                                        .cls-1 {
-                                            fill: #fff;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="cls-1"
-                                    d="M27.22,54.45C12.21,54.45,0,42.23,0,27.22S12.21,0,27.22,0s27.22,12.21,27.22,27.22-12.21,27.22-27.22,27.22ZM27.22,2.73C13.72,2.73,2.73,13.72,2.73,27.22s10.99,24.5,24.5,24.5,24.5-10.99,24.5-24.5S40.73,2.73,27.22,2.73Z" />
-                                <path class="cls-1"
-                                    d="M24.59,36.34c-1.8,0-3.6-.69-4.97-2.06l-5.39-5.39,1.93-1.93,5.39,5.39c1.68,1.68,4.41,1.68,6.09,0l12.84-12.84,1.93,1.93-12.84,12.84c-1.37,1.37-3.17,2.06-4.97,2.06Z" />
-                            </svg>E te mostra que se planejar financeiramente também pode realizar sonhos.
-                        </li>
-                    </ul>
+                    <div class="porkcoin">
+                        <img src="assets/Porquinho educação financeira.png" alt="">
+                    </div>
+                    <div class="secundary-text">
+                        <h4>Na prática, a Educação Financeira pode te ajudar a:</h4>
+                        <ul>
+                            <li>
+                                <svg id="icone-check" data-name="icone-check" viewBox="0 0 54.45 54.45">
+                                    <path
+                                        d="M27.22,54.45C12.21,54.45,0,42.23,0,27.22S12.21,0,27.22,0s27.22,12.21,27.22,27.22-12.21,27.22-27.22,27.22ZM27.22,2.73C13.72,2.73,2.73,13.72,2.73,27.22s10.99,24.5,24.5,24.5,24.5-10.99,24.5-24.5S40.73,2.73,27.22,2.73Z" />
+                                    <path
+                                        d="M24.59,36.34c-1.8,0-3.6-.69-4.97-2.06l-5.39-5.39,1.93-1.93,5.39,5.39c1.68,1.68,4.41,1.68,6.09,0l12.84-12.84,1.93,1.93-12.84,12.84c-1.37,1.37-3.17,2.06-4.97,2.06Z" />
+                                </svg>Aprender a lidar melhor<br> com seu dinheiro.
+                            </li>
+                            <li>
+                                <svg id="icone-check" data-name="icone-check" viewBox="0 0 54.45 54.45">
+                                    <path
+                                        d="M27.22,54.45C12.21,54.45,0,42.23,0,27.22S12.21,0,27.22,0s27.22,12.21,27.22,27.22-12.21,27.22-27.22,27.22ZM27.22,2.73C13.72,2.73,2.73,13.72,2.73,27.22s10.99,24.5,24.5,24.5,24.5-10.99,24.5-24.5S40.73,2.73,27.22,2.73Z" />
+                                    <path
+                                        d="M24.59,36.34c-1.8,0-3.6-.69-4.97-2.06l-5.39-5.39,1.93-1.93,5.39,5.39c1.68,1.68,4.41,1.68,6.09,0l12.84-12.84,1.93,1.93-12.84,12.84c-1.37,1.37-3.17,2.06-4.97,2.06Z" />
+                                </svg>Entender que dinheiro é<br> mais que só pagar contas.
+                            </li>
+                            <li>
+                                <svg id="icone-check" data-name="icone-check" viewBox="0 0 54.45 54.45">
+                                    <path
+                                        d="M27.22,54.45C12.21,54.45,0,42.23,0,27.22S12.21,0,27.22,0s27.22,12.21,27.22,27.22-12.21,27.22-27.22,27.22ZM27.22,2.73C13.72,2.73,2.73,13.72,2.73,27.22s10.99,24.5,24.5,24.5,24.5-10.99,24.5-24.5S40.73,2.73,27.22,2.73Z" />
+                                    <path
+                                        d="M24.59,36.34c-1.8,0-3.6-.69-4.97-2.06l-5.39-5.39,1.93-1.93,5.39,5.39c1.68,1.68,4.41,1.68,6.09,0l12.84-12.84,1.93,1.93-12.84,12.84c-1.37,1.37-3.17,2.06-4.97,2.06Z" />
+                                </svg>Descobrir que planejamento<br> também realiza sonhos.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="socialbox">
                     <div class="icons">
